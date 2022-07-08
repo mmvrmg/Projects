@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+        function onlyUnique(array1){
+            var unique = []
+            for(i=0; i < array1.length; i++){
+                if(!unique.includes(array1[i]) == true){
+                    unique.push(array1[i])
+                }
+            }
+            return unique
+        }
+
+        document.write(onlyUnique([1,2,3,3,3,3,4,5]))
+
+        </script>
+    </body>
+</html>
